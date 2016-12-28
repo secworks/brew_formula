@@ -1,6 +1,6 @@
 class Cxmon < Formula
   desc "Interactive command-driven file manipulation tool similar to a
-        machine code monitor/debugger, There are built-in PowerPC, 680x0, 80x86
+        machine code monitor/debugger. There are built-in PowerPC, 680x0, 80x86
         (including x86-64), 6502 and Z80 disassemblers."
   homepage "http://cxmon.cebix.net/"
   url "http://cxmon.cebix.net/downloads/cxmon-3.2.tar.gz"
