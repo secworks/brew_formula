@@ -3,7 +3,7 @@ A collection of brew formulas I try to develop and maintain.
 
 
 ## cxmon
-A formula for [cxmon](http://cxmon.cebix.net/), a an interactive
+A formula for [cxmon](http://cxmon.cebix.net/), an interactive
 command-driven file manipulation tool that is inspired by the "Amiga
 Monitor" by Timo Rossi. It has commands and features similar to a
 machine code monitor/debugger, but it lacks any functions for
