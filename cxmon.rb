@@ -1,22 +1,12 @@
 class Cxmon < Formula
-  desc "Interactive command-driven file manipulation tool similar to a
-        machine code monitor/debugger. There are built-in PowerPC, 680x0, 80x86
-        (including x86-64), 6502 and Z80 disassemblers."
+  desc "Interactive command-driven file manipulation tool."
   homepage "http://cxmon.cebix.net/"
   url "http://cxmon.cebix.net/downloads/cxmon-3.2.tar.gz"
-  version "3.2"
   sha256 "707a453e5cb397c82a706bd61e1a7533c520e0064859f4365b7504182f438889"
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-
-    # Remove unrecognized options if warned by configure
-    system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-    # system "cmake", ".", *std_cmake_args
-    system "make", "install" # if this fails, try separate make/make install steps
+    system "./configure", "--prefix=#{prefix}", "--mandir=#{man}"
+    system "make", "install"
   end
 
   test do
